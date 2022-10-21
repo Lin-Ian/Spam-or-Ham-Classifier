@@ -5,9 +5,11 @@
     <title>Spam Detector</title>
 </head>
 <body>
-    <label for="message">Enter Message Here:</label><br>
-    <input type="text">
-    <input type="submit" value="Submit">
+    <form action="/result" method="post">
+        <label for="message">Enter Message Here:</label><br>
+        <input type="text">
+        <input type="submit" value="Submit">
+    </form>
 
     <h1 >{{status}}</h1>
 
