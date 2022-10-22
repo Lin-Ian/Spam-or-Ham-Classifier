@@ -16,9 +16,10 @@ def result():
     message = request.form["message"]
 
     # Print classification (spam/ham) to console
-    print(classify(message, vectorize, random_forest_model))
+    message_class = classify(message, vectorize, random_forest_model)
+    print(message_class)
 
-    return render_template("home.html", status=message)
+    return render_template("home.html", status=message_class)
 
 
 if __name__ == "__main__":
