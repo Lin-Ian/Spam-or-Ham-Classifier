@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Spam Detector</title>
+    <title>Spam Message Detector</title>
 </head>
 <body>
+    <header>
+        <h1>Spam Message Detector</h1>
+    </header>
     <form action="/result" method="post">
-        <label for="message">Enter Message Here:</label><br>
+        <label for="message">Enter Message:</label>
+        <br>
         <input type="text" id="message" name="message">
+        <br>
         <input type="submit" value="Submit">
     </form>
 
-    <h1 >{{status}}</h1>
+    <h1>{{status}}</h1>
 
 </body>
 </html>
