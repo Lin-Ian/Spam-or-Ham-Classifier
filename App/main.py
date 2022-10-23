@@ -19,7 +19,7 @@ def result():
     message_class = classify(message, vectorize, random_forest_model)
     print(message_class)
 
-    return render_template("home.html", status=message_class)
+    return render_template("result.html", status=message_class)
 
 
 if __name__ == "__main__":

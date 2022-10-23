@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Parent Template</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/template.css')}}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Spam Message Detector</h1>
+    </header>
+    <form action="/result" method="post">
+        <label for="message">Enter Message:</label>
+        <br>
+        <input type="text" id="message" name="message">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
