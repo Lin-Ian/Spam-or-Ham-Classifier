@@ -9,10 +9,14 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+label {
+    font-size: 32px;
+}
+
 input[type="Text"] {
     width: 80%;
     font-family: "Inter", sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     background-color: #f5f5f1;
     border: none;
     color: #221f1f;
