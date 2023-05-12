@@ -28,5 +28,5 @@ if __name__ == "__main__":
     # Load random forest model
     random_forest_model = joblib.load('Model/rf_model.pkl')
 
-    app.run(debug=True)
+    app.run()
 
